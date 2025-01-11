@@ -9,6 +9,11 @@ function Book(title, author, pages, hasRead){
         return `${title} by ${author}, ${pages} pages, ${hasRead ? 'read!' : 'not read yet!'}`;
     }
 }
+function addBookToLibrary(title, author, pages, hasRead){
+    myLibrary.push(new Book(title,author, pages, hasRead));
+}
+
+
 
 const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkein', 295, true);
 
